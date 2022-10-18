@@ -1,0 +1,49 @@
+# Copyright (C) 2022 ihniwiad
+# This file is distributed under the same license as the Custom Avatar plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Avatar 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-avatar\n"
+"POT-Creation-Date: 2022-10-18T11:52:21+00:00\n"
+"PO-Revision-Date: 2022-10-18 13:56+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Domain: custom-avatar\n"
+
+#. Plugin Name of the plugin
+msgid "Custom Avatar"
+msgstr "Custom Avatar"
+
+#. Description of the plugin
+msgid "Replace Gravatar image by configurable user specific image."
+msgstr "Ersetzt das Gravatar-Bild durch ein benutzerspezifisches Bild."
+
+#. Author of the plugin
+msgid "ihniwiad"
+msgstr "ihniwiad"
+
+#: index.php:57
+msgid "Image"
+msgstr "Bild"
+
+#: index.php:60
+msgid "User image"
+msgstr "Benutzer-Bild"
+
+#: index.php:76
+msgid "Upload / change image"
+msgstr "Bild hochladen / ändern"
+
+#: index.php:77
+msgid "Delete image"
+msgstr "Bild löschen"
+
+#: index.php:79
+msgid "Shown in blog list. Replacing Gravatar image."
+msgstr "Wird in Blog-Liste angezeigt. Ersetzt Gravatar-Bild."

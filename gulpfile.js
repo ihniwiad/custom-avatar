@@ -41,13 +41,13 @@ const publishConfig = {
 
 
 // NOTE: take care at this path since you’re deleting files outside your project
-const publishFullPath = envConfig.PUBLISH_PATH + '/' + publishConfig.folderName;
+const publishFullPath = envConfig.PUBLISH_PATH + publishConfig.folderName;
 
 
 const publishFolderDelete = ( cb ) => {
 
     if ( !! envConfig.PUBLISH_PATH && !! publishConfig.folderName ) {
-        // console.log( 'delete: ' + publishFullPath );
+        console.log( 'delete: ' + publishFullPath );
         return src( publishFullPath, { read: false, allowEmpty: true } )
             .pipe( clean( { force: true } ) ) // NOTE: take care at this command since you’re deleting files outside your project
         ;
@@ -62,7 +62,8 @@ const publishFolderDelete = ( cb ) => {
 const publishFolderCreate = ( cb ) => {
 
     if ( !! envConfig.PUBLISH_PATH && !! publishConfig.folderName ) {
-        // console.log( 'create: ' + publishFullPath + ' (src: ' + publishConfig.src + ', base: ' + publishConfig.base + ')' );
+        // console.log( 'src: ' + publishConfig.src + ', base: ' + publishConfig.base );
+        console.log( 'create: ' + publishFullPath );
         return src( publishConfig.src, { base: publishConfig.base } )
             .pipe( dest( publishFullPath ) )
         ;

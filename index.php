@@ -70,19 +70,21 @@ function ca_user_meta_edit_form( $user ) {
                 <td>
                     <input name="user_image" type="hidden" value="<?php echo esc_attr( $user_image ); ?>" data-uifn="meta-img-input">
                     <div>
-                        <?php
-                            if ( ! empty( $user_image ) ) {
-                                $image_attributes = wp_get_attachment_image_src($user_image, 'thumbnail' ); // returns array( $url, $width, $height )
-                                $image_url = $image_attributes[ 0 ];
-                            }
-                            else {
-                                $image_url = $ca_base64_placeholder;
-                            }
-                            echo '<img class="avatar avatar-96 photo" src="' . $image_url . '" width="96" height="96" alt="User image" data-uifn="meta-img" />';
-                        ?>
+                    	<label for="ca-upload-change-img-btn">
+	                        <?php
+	                            if ( ! empty( $user_image ) ) {
+	                                $image_attributes = wp_get_attachment_image_src($user_image, 'thumbnail' ); // returns array( $url, $width, $height )
+	                                $image_url = $image_attributes[ 0 ];
+	                            }
+	                            else {
+	                                $image_url = $ca_base64_placeholder;
+	                            }
+	                            echo '<img class="avatar avatar-96 photo" src="' . $image_url . '" width="96" height="96" alt="User image" data-uifn="meta-img" />';
+	                        ?>
+	                    </label>
                     </div>
                     <div>
-                        <button class="button wp-generate-pw hide-if-no-js" data-uifn="browse-btn"><?php esc_html_e( 'Upload / change image', 'custom-avatar' ); ?></button>
+                        <button class="button wp-generate-pw hide-if-no-js" id="ca-upload-change-img-btn" data-uifn="browse-btn"><?php esc_html_e( 'Upload / change image', 'custom-avatar' ); ?></button>
                         <button class="button hide-if-no-js<?php echo ( empty( $user_image ) ) ? ' hidden' : ''; ?>" data-uifn="img-delete" style="color: #b32d2e; border-color: transparent;"><?php esc_html_e( 'Delete image', 'custom-avatar' ); ?></button>
                     </div>
                     <p class="description"><?php esc_html_e( 'Shown in blog list. Replacing Gravatar image.', 'custom-avatar' ); ?></p>

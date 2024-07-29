@@ -1,12 +1,15 @@
 <?php
 
 /**
- * Plugin Name: Custom Avatar
- * Description: Replace Gravatar image by configurable user specific image.
- * Version: 1.0
- * Author: ihniwiad
- * Text Domain: custom-avatar
- * Domain Path: /languages
+ * Plugin Name:     Custom Avatar
+ * Description:     Replace Gravatar image by configurable user specific image or placeholder. No more traffic to gravatar.com in WordPress (GDPR compliant).
+ * Version:         1.0.0
+ * Author:          ihniwiad
+ * Plugin URI:      https://github.com/ihniwiad/custom-avatar
+ * License:         GPL-2.0-or-later
+ * License URI:     https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:     custom-avatar
+ * Domain Path:     /languages
  */
 
 

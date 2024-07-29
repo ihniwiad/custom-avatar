@@ -1,7 +1,7 @@
 {
   "name": "Custom Avatar",
   "version": "1.0.0",
-  "description": "Replace Gravatar image by configurable user specific image.",
+  "description": "Replace Gravatar image by configurable user specific image or placeholder. No more traffic to gravatar.com in WordPress (GDPR compliant).",
   "author": "ihniwiad",
   "license": "GPL-2.0-or-later",
   "main": "index.php",
@@ -10,6 +10,10 @@
     "watch": "gulp watch",
     "publish": "gulp publish",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ihniwiad/custom-avatar"
   },
   "dependencies": {},
   "devDependencies": {
